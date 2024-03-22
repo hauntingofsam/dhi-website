@@ -1,0 +1,12 @@
+.nav-class a.active{
+    color: black;
+}
+@media screen and (max-width: 800px) {
+    .nav-mobile{
+        text-align: center;
+        background-color: white;
+        padding: 50px 0px;
+        height: 100vh;
+        /* width: 50%; */
+    }
+}

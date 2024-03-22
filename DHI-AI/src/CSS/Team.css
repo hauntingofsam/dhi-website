@@ -1,0 +1,91 @@
+#contactContainer{
+    /* background-color: #1b2534; */
+    /* background-color: #101010; */
+    background-color:black;
+    /* background-color: #181818; */
+
+}
+
+#contactContainer h1{
+    color:white;
+    /* font-family: 'Cinzel', serif; */
+    font-size: 30px;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    /* margin-bottom: 2%; */
+    text-align: center;
+}
+
+.contactCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto 5%;
+    /* background-color: black; */
+    justify-content: center;
+}
+.cards{
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px 20px;
+    /* border-radius: 20px; */
+}
+
+.cardItems{
+    opacity: 0;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    z-index: 2;
+}
+
+.cardItems li{
+    margin: 5% 5%;
+    text-align: center;
+    font-size: large;
+    font-family: 'Marcellus', serif;
+}
+
+.cardItems li img{
+    height: 100%;
+    width: 100%;
+}
+
+.socLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socLinks li{
+    margin: 5% 10%;
+}
+
+.showImg .shwimg{
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    width: 150px;
+    margin: 80px 25px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.showImg:hover .cardItems{
+    opacity: 1;
+    animation: opacityInc 1s;
+
+}
+.showImg:hover .shwimg{
+    opacity: 0;
+}
+
+@keyframes opacityInc {
+    0%{ opacity: 0;transform: translate(0,-20px)};
+    100%{opacity: 1;}
+}
