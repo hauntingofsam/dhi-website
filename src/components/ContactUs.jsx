@@ -59,7 +59,7 @@ const ContactUs=()=>{
 
             </button>
             {showModal && 
-                <div className=" z-10 inset-0 fixed bg-black bg-opacity-40 backdrop-blur-lg">
+                <div className=" z-10 inset-0 fixed bg-black bg-opacity-40 backdrop-blur-lg overflow-scroll md:overflow-hidden">
                     <div className="md:w-[70vw] w-[90vw] flex flex-col md:flex-row  my-auto mx-auto top-16 relative">
                         <div className="w-[90vw] md:w-[35vw] bg-indigo-700 text-white h-[450px] text-center px-4 py-8">
                             <p className="my-4 text-2xl">
@@ -86,13 +86,13 @@ const ContactUs=()=>{
                             Enter your information to register for the demo.
 
                             </p>
-                            <form className="flex flex-col mx-auto w-[300px]">
-                                <input type="text" placeholder="Name" required className="w-[300px] h-[40px] mt-2 p-2"/>
-                                <input type="text" placeholder="Company Name" required className="w-[300px] h-[40px] mt-2 p-2"/>
-                                <input type="email" placeholder="Work Email" required className="w-[300px] h-[40px] mt-2 p-2" />
-                                <input type="text" placeholder="Phone" required className="w-[300px] h-[40px] mt-2 p-2"/>
-                                <textarea name="" id="" placeholder="Tell us about your requirement" rows="3" className="w-[300px] mt-2 p-2"></textarea>
-                                <button type="submit" className="px-4 py-2 bg-slate-300 rounded-lg my-4">Submit</button>
+                            <form className="flex flex-col mx-auto w-[270px]">
+                                <input type="text" placeholder="Name" required className="w-full h-[35px] mt-2 p-2"/>
+                                <input type="text" placeholder="Company Name" required className="w-full h-[35px] mt-2 p-2"/>
+                                <input type="email" placeholder="Work Email" required className="w-full h-[35px] mt-2 p-2" />
+                                <input type="text" placeholder="Phone" required className="w-full h-[35px] mt-2 p-2"/>
+                                <textarea name="" id="" placeholder="Tell us about your requirement" rows="3" className="w-full mt-2 p-2"></textarea>
+                                <button type="submit" className="px-4 py-2 bg-slate-300 rounded-lg mx-4 mt-2">Submit</button>
                             </form>
 
                         </div>

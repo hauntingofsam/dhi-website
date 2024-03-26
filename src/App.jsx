@@ -13,7 +13,6 @@ import Capabilities from './components/Capabilities'
 import WhyDhi from './components/WhyDHI'
 import Team from './components/Team'
 import ContactUs from './components/ContactUs'
-import Form from './components/Form'
 import Industries from './components/Industries'
 
 function App() {
