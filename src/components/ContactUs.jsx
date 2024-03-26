@@ -4,7 +4,6 @@ import demo from "../assets/video-player.png"
 import expert from "../assets/customer-service.png"
 import { IoLogoFacebook, IoMdMail } from "react-icons/io";
 import { RxInstagramLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
-import Form from "./Form.jsx"
 const ContactUs=()=>{
     const [showModal,setshowModal]=useState(false);
     return(
