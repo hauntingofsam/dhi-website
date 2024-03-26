@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 import demo from "../assets/video-player.png"
 import expert from "../assets/customer-service.png"
 import { IoLogoFacebook, IoMdMail } from "react-icons/io";
@@ -58,7 +59,48 @@ const ContactUs=()=>{
                     Book a Demo
 
             </button>
-            {showModal && <Form/>}
+            {showModal && 
+                <div className=" z-10 inset-0 fixed bg-black bg-opacity-40 backdrop-blur-lg">
+                    <div className="md:w-[70vw] w-[90vw] flex flex-col md:flex-row  my-auto mx-auto top-16 relative">
+                        <div className="w-[90vw] md:w-[35vw] bg-indigo-700 text-white h-[450px] text-center px-4 py-8">
+                            <p className="my-4 text-2xl">
+                            Talk to the experts
+
+                            </p>
+                            <p className="my-4 text-sm">
+                            Contact us for a free consultation and to see how predefined solutions and services can help businesses like yours.
+
+                            </p>
+                            <p className="my-4 text-sm font-bold">
+                            We will help you achieve your vision
+
+                            </p>
+
+                        </div>
+                        <div className="w-[90vw] md:w-[35vw] h-[450px] bg-white text-center px-4 my-auto relative">
+                            <button onClick={()=>{setshowModal(false)}} className="absolute top-5 right-12"><IoMdClose size={25} className="text-black fixed mr-2"/></button>
+                            <p className="my-4 text-2xl text-gray-900 font-semibold">
+                            Book a Demo
+
+                            </p>
+                            <p className="my-4 text-sm">
+                            Enter your information to register for the demo.
+
+                            </p>
+                            <form className="flex flex-col mx-auto w-[300px]">
+                                <input type="text" placeholder="Name" required className="w-[300px] h-[40px] mt-2 p-2"/>
+                                <input type="text" placeholder="Company Name" required className="w-[300px] h-[40px] mt-2 p-2"/>
+                                <input type="email" placeholder="Work Email" required className="w-[300px] h-[40px] mt-2 p-2" />
+                                <input type="text" placeholder="Phone" required className="w-[300px] h-[40px] mt-2 p-2"/>
+                                <textarea name="" id="" placeholder="Tell us about your requirement" rows="3" className="w-[300px] mt-2 p-2"></textarea>
+                                <button type="submit" className="px-4 py-2 bg-slate-300 rounded-lg my-4">Submit</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            }
             
             <div className="bg-purple-700 text-white flex flex-col md:flex-row justify-around gap-y-10 py-10 mt-5"> 
             <div className="flex flex-col md:flex-row md:w-[400px] w-[90vw] mx-auto gap-4 justify-center">
