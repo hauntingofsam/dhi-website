@@ -71,7 +71,7 @@ const Capabilities=()=>{
                         </p>
 
                     </SwiperSlide>
-                    <SwiperSlide className="bg-indigo-300 w-[300px] text-center">
+                    <SwiperSlide className="bg-indigo-700 w-[300px] text-center">
                         <img src={img2} className="mx-auto my-5"/>
                         <p className="text-white text-2xl mt-4">ESG for Enterprise</p>
                         <p className="text-white mt-5 px-4">
