@@ -25,3 +25,47 @@
     
     transform: rotateY(180deg);
   }
+  
+.left{
+  left:0;
+  animation: moveright 1s linear forwards;
+}
+.right{
+  
+  animation: moveleft 1s linear forwards;
+}
+  
+  @keyframes moveright {
+    0%{
+        opacity: 1;
+        transform: translateX(-30px);
+
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+    
+}
+@keyframes moveleft {
+  0%{
+      opacity: 1;
+      transform: translateX(30px);
+
+
+  }
+  100%{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+  
+  
+}
+[data-aos] {
+  visibility: visible;
+}
+[data-aos].animated {
+  visibility: visible;
+}

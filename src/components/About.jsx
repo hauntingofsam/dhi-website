@@ -17,7 +17,7 @@ const About=()=>{
     
     return(
         <div className="bg-slate-100 ">
-            <div className="text-4xl text-gray-900 py-5 ml-[10vw]">
+            <div className="text-4xl text-gray-900 py-6 ml-[5vw]">
                 About US
 
             </div>

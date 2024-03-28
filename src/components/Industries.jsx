@@ -170,18 +170,20 @@ const Industries=()=>{
     
     return(
         <div className="bg-white">
-            <div className="text-4xl text-gray-900 ml-[10vw]">
+            <div className="text-4xl text-gray-900 py-6 ml-[5vw]">
                 Industries
 
             </div>
-            <div className="flex flex-col md:flex-row flex-wrap justify-center ml-[5vw] mr-[5vw] mt-10 ">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center ml-[5vw] mr-[5vw] mt-10">
                 
                 {industries.map((industry,industryIndex)=>(
                     <div
                     key={industryIndex}
                     onClick={() => goToSlide(industryIndex)}
                     
-                    className="h-[120px] w-[90vw] md:w-[140px] bg-white border-l-[0.5px] border-gray-700 text-center  px-2"
+                    className={
+                        industryIndex==currentIndex ? ("h-[120px] w-[90vw] md:w-[160px] bg-purple-700 text-white border-l-[0.5px] drop-shadow-md text-center  px-2 hover:cursor-pointer"):("h-[120px] w-[90vw] md:w-[160px] bg-white drop-shadow-md border-gray-700 text-center  px-2 hover:cursor-pointer")
+                    }
                     >
                        {industries[industryIndex].heading}
                     </div>
@@ -192,7 +194,7 @@ const Industries=()=>{
             
             
             </div>
-            <div className="flex flex-col md:flex-row justify-around ml-[5vw] mr-[5vw] mt-10 gap-6">
+            <div className="flex flex-col md:flex-row justify-around ml-[5vw] mr-[5vw] mb-20 gap-6 mt-10">
                 <div className="w-[90vw] md:w-[450px] my-auto">
                     <img src={industries[currentIndex].bodyimg}/>
 

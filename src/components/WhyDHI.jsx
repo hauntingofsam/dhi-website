@@ -4,12 +4,10 @@ import medal from "../assets/medal.gif"
 import books from "../assets/books.gif"
 import flag from "../assets/flag.gif"
 import target from "../assets/target.gif"
-import img2 from "../assets/capab-2.jpg"
+import img2 from "../assets/Ibm_emerging.jpeg"
 import img3 from "../assets/capab-3.jpg"
-import img5 from "../assets/capab-5.jpg"
-import img6 from "../assets/capab-6.jpg"
-import img7 from "../assets/capab-7.jpg"
-import img8 from "../assets/capab-8.jpg"
+import ibm from "../assets/ibm_silver.png"
+import silicon from "../assets/siliconindia.png"
 import img1 from "../assets/capab-1.jpg"
 import {Swiper,SwiperSlide} from "swiper/react";
 import { RxChevronLeft,RxChevronRight } from "react-icons/rx";
@@ -26,17 +24,17 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
 const slides = [
     {
-      url: img1,
+      url: ibm,
       heading:"IBM silver partner",
       text:"Awarded as IBM silver partner for the year 2023"
     },
     {
       url: img2 ,
       heading:"IBM HQ1 Emerging Partner",
-      text:"Awarded as IBM silver partner for the year 2023"
+      text:"Awarded as IBM HQ1 emerging partner for the year 2023"
     },
     { 
-        url:img3 ,
+        url:silicon ,
         heading:"Silicon India",
         text:"Awarded as one the 10 best AI startups of 2023"
     },
@@ -146,7 +144,7 @@ const WhyDhi=()=>{
                     // style={{ backgroundImage: `` }}
                     className='w-full h-full rounded-2xl bg-center bg-cover duration-500 bg-indigo-700 py-4 px-2'
                 >
-                    <img src={slides[currentIndex].url} className="mx-auto "/>
+                    <img src={slides[currentIndex].url} className="mx-auto h-[200px] w-[200px]"/>
                     <div className="mt-2 text-2xl text-white text-center px-4">
                         {slides[currentIndex].heading}
 

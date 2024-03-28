@@ -1,11 +1,15 @@
 import React from 'react';
 import dummyImg from '../assets/capab-1.jpg'
+import p1 from "../assets/Picture1.png"
+import p2 from "../assets/Picture2.png"
+import p3 from "../assets/Picture5.png"
+import p4 from "../assets/Picture4.png"
 import "../CSS/Team.css"
 const founders=[
-    {name: "Joe Biden", image: {dummyImg}, designation:"CEO", twLink: "/", igLink: "/", lkLink: "/"},
-    {name: "Joe Biden", image: {dummyImg}, designation:"CEO", twLink: "/", igLink: "/", lkLink: "/"},
-    {name: "Joe Biden", image: {dummyImg}, designation:"CEO", twLink: "/", igLink: "/", lkLink: "/"},
-    {name: "Joe Biden", image: {dummyImg}, designation:"CEO", twLink: "/", igLink: "/", lkLink: "/"},
+    {name: "Sandip Datta", image: p1, designation:"CEO & CTO", twLink: "/", igLink: "/", lkLink: "/"},
+    {name: "Alok Srivastava", image: p2, designation:"Chief Business Officer", twLink: "/", igLink: "/", lkLink: "/"},
+    {name: "Deepak Desai", image: p3, designation:"Chief Operating Officer", twLink: "/", igLink: "/", lkLink: "/"},
+    {name: "Shiva Uppal", image: p4, designation:"Chief Marketing Officer", twLink: "/", igLink: "/", lkLink: "/"},
 ]
 export default function Team(){
     return(
@@ -15,9 +19,10 @@ export default function Team(){
         {founders.map((item)=>(
           <li className='cards'>
             <div className='showImg'>
-              <img className='shwimg' src={dummyImg} alt="" />
+              
+              <img className='shwimg' src={item.image} alt="" />
               <ul className='cardItems'>
-                <li><img src={dummyImg} alt="" /></li>
+                <li><img src={item.image} alt="" /></li>
                 <li className='names'>{item.name}</li>
                 <hr />
                 <li className='dsg'><b>{item.designation}</b></li>
