@@ -182,7 +182,7 @@ const Industries=()=>{
                     onClick={() => goToSlide(industryIndex)}
                     
                     className={
-                        industryIndex==currentIndex ? ("h-[120px] w-[90vw] md:w-[160px] bg-purple-700 text-white border-l-[0.5px] drop-shadow-md  px-2  hover:cursor-pointer flex flex-col justify-center"):("h-[120px] w-[90vw] md:w-[160px] bg-white drop-shadow-md border-gray-700  px-2 hover:cursor-pointer flex flex-col justify-center")
+                        industryIndex==currentIndex ? ("h-[120px] w-[90vw] md:w-[160px] bg-purple-700 text-white  drop-shadow-md  px-2  hover:cursor-pointer flex flex-col justify-center"):("h-[120px] w-[90vw] md:w-[160px] bg-white drop-shadow-md border-gray-700  px-2 hover:cursor-pointer flex flex-col justify-center")
                     }
                     >
                        <div className="">
@@ -206,13 +206,17 @@ const Industries=()=>{
                         Use Cases:
 
                     </div>
+                    <div className="flex flex-col">
                     {industries[currentIndex].usecases.map((el)=>(
                         <div
                         key={el}
-                        className="flex flex-row flex-wrap gap-2 mt-2"
+                        className="flex flex-row gap-2 mt-2"
                         > 
+                            <div className="h-[30px] w-[30px]">
+                            <TiTick className="text-green-600" size={30}/>
+
+                            </div>
                             
-                            <TiTick className="text-green-600 w-[30px] h-[30px]" />
                             <p>
                                 {el}
                             </p>
@@ -223,17 +227,24 @@ const Industries=()=>{
                             
                         
                     ))}
+
+                    </div>
+                    
                     <div className="text-3xl text-gray-900 mt-10 ">
                         Technologies Used:
 
                     </div>
+                    <div className="flex flex-col">
                     {industries[currentIndex].tech.map((el)=>(
                         <div
                         key={el}
-                        className="flex flex-row flex-wrap gap-2 mt-2"
+                        className="flex flex-row gap-2 mt-2"
                         > 
+                            <div className="w-[30px] h-[30px]">
+                            <TiTick className="text-green-600 " size={30} />
+
+                            </div>
                             
-                            <TiTick className="text-green-600 w-[30px] h-[30px]" />
                             <p>
                                 {el}
                             </p>
@@ -244,17 +255,24 @@ const Industries=()=>{
                             
                         
                     ))}
+
+                    </div>
+                    
                     <div className="text-3xl text-gray-900 mt-10 ">
                     Benefits Derived:
 
                     </div>
+                    <div className="flex flex-col">
                     {industries[currentIndex].benefits.map((el)=>(
                         <div
                         key={el}
-                        className="flex flex-row flex-wrap gap-2 mt-2"
+                        className="flex flex-row gap-2 mt-2"
                         > 
+                            <div className="w-[30px] h-[30px]">
+                            <TiTick className="text-green-600 " size={30}/>
+
+                            </div>
                             
-                            <TiTick className="text-green-600 w-[30px] h-[30px]" />
                             <p>
                                 {el}
                             </p>
@@ -265,6 +283,9 @@ const Industries=()=>{
                             
                         
                     ))}
+
+                    </div>
+                    
 
                 </div>
                 
