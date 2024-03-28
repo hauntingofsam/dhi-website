@@ -174,7 +174,7 @@ const Industries=()=>{
                 Industries
 
             </div>
-            <div className="flex flex-col md:flex-row flex-wrap justify-center ml-[5vw] mr-[5vw] mt-10">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center ml-[5vw] mr-[5vw] mt-10 text-center ">
                 
                 {industries.map((industry,industryIndex)=>(
                     <div
@@ -182,10 +182,12 @@ const Industries=()=>{
                     onClick={() => goToSlide(industryIndex)}
                     
                     className={
-                        industryIndex==currentIndex ? ("h-[120px] w-[90vw] md:w-[160px] bg-purple-700 text-white border-l-[0.5px] drop-shadow-md text-center  px-2 hover:cursor-pointer"):("h-[120px] w-[90vw] md:w-[160px] bg-white drop-shadow-md border-gray-700 text-center  px-2 hover:cursor-pointer")
+                        industryIndex==currentIndex ? ("h-[120px] w-[90vw] md:w-[160px] bg-purple-700 text-white border-l-[0.5px] drop-shadow-md  px-2  hover:cursor-pointer flex flex-col justify-center"):("h-[120px] w-[90vw] md:w-[160px] bg-white drop-shadow-md border-gray-700  px-2 hover:cursor-pointer flex flex-col justify-center")
                     }
                     >
+                       <div className="">
                        {industries[industryIndex].heading}
+                        </div>
                     </div>
 
 

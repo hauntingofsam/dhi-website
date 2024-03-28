@@ -21,7 +21,7 @@ const About=()=>{
                 About US
 
             </div>
-            <div className="flex flex-col md:flex-row w-[90vw] mx-auto ">
+            <div className="flex flex-col md:flex-row w-[90vw] mx-auto mt-8">
                 <div className="bg-white h-[330px] lg:w-[450px] w-[90vw] drop-shadow-lg">
                     <img src={img1} className="ml-8 mt-4"/>
                     <p className="ml-8 mt-4 mr-8 text-lg">
@@ -45,7 +45,7 @@ const About=()=>{
                 </div>
 
             </div>
-            <div className="flex flex-col md:flex-row w-[90vw] mx-auto ">
+            <div className="flex flex-col md:flex-row w-[90vw] mx-auto mb-20">
                 <div className="hover:bg-white  bg-slate-100 h-[330px] lg:w-[450px] w-[90vw] drop-shadow-lg">
                     <img src={img4} className="ml-8 mt-4"/>
                     <p className="ml-8 mt-4 mr-8 text-lg">

@@ -16,8 +16,8 @@ const Navbar=()=>{
             </button>
             <div className={`flex md:flex-row flex-col  text-sm my-auto md:mx-8 md:gap-4 md:w-auto nav-class nav-mobile ${navOpen? "-md:animate-[width] duration-500 w-[50%] ":"w-0 -md:animate-[width] duration-500 overflow-hidden"} gap-8 `}>
                 <NavLink to={'/'} className="text-blue-500">Home</NavLink>
-                {/* <NavLink to={'/about'} className="text-blue-500">About</NavLink> */}
-                <NavLink to={'/offerings'} className="text-blue-500">Oferrings</NavLink>
+                <NavLink to={'/about'} className="text-blue-500">About</NavLink>
+                <NavLink to={'/offerings'} className="text-blue-500">Offerings</NavLink>
                 <NavLink to={'/capabilities'} className="text-blue-500">Capabilities</NavLink>
                 <NavLink to={'/solutions'} className="text-blue-500">Solutions</NavLink>
                 <NavLink to={'/industries'} className="text-blue-500">Industries</NavLink>

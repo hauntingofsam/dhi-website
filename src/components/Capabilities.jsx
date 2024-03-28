@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import {Navigation,EffectCoverflow,Pagination} from "swiper/modules";
 import "../CSS/Capabilities.css"
+import { BsInstagram } from "react-icons/bs";
 // import { RxChevronLeft } from "react-icons/rx";
 
 const Capabilities=()=>{
@@ -195,12 +196,12 @@ const Capabilities=()=>{
 
                     </SwiperSlide >
                     <div className="slider-controller">
-                        <div className="swiper-button-prev slider-arrow bg-white opacity-50 rounded-full ">
-                            <RxChevronLeft size={20} name="arrow-back"/>
+                        <div className="swiper-button-prev slider-arrow  ">
+                            <RxChevronLeft name="arrow-back"/>
 
                         </div>
                         <div className="swiper-button-next slider-arrow">
-                            <RxChevronRight size={20} name="arrow-next"/>
+                            <RxChevronRight  name="arrow-next"/>
 
                         </div>
                         <div className="swiper-pagination">

@@ -177,7 +177,7 @@ const WhyDhi=()=>{
 
 
             
-            <div className="text-white text-3xl text-center mt-4">
+            <div className="text-white text-3xl text-center mt-4 pb-10">
                 Our Partners
             </div>
             
