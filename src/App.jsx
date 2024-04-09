@@ -14,6 +14,9 @@ import WhyDhi from './components/WhyDHI'
 import Team from './components/Team'
 import ContactUs from './components/ContactUs'
 import Industries from './components/Industries'
+import AboutNew from './components/AboutNew'
+import Customers from './components/Customers'
+import ScrollToTop from './components/ScrolltoTop'
 
 function App() {
   
@@ -22,14 +25,17 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar/>
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
+          {/* <Route path="/about" element={<About/>}/> */}
+          <Route path="/about" element={<AboutNew/>}/>
           <Route path="/offerings" element={<Offerings/>}/>
-          <Route path="/capabilities" element={<Capabilities/>}/>
+          {/* <Route path="/capabilities" element={<Capabilities/>}/> */}
           <Route path="/solutions" element={<Solutions/>}/>
           <Route path="/industries" element={<Industries/>}/>
           <Route path="/whydhi" element={<WhyDhi/>}/>
+          <Route path="/customers" element={<Customers/>}/>
           <Route path="/team" element={<Team/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
 

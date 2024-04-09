@@ -18,10 +18,11 @@ const Navbar=()=>{
                 <NavLink to={'/'} className="text-blue-500">Home</NavLink>
                 <NavLink to={'/about'} className="text-blue-500">About</NavLink>
                 <NavLink to={'/offerings'} className="text-blue-500">Offerings</NavLink>
-                <NavLink to={'/capabilities'} className="text-blue-500">Capabilities</NavLink>
+                {/* <NavLink to={'/capabilities'} className="text-blue-500">Capabilities</NavLink> */}
                 <NavLink to={'/solutions'} className="text-blue-500">Solutions</NavLink>
                 <NavLink to={'/industries'} className="text-blue-500">Industries</NavLink>
                 <NavLink to={'/whydhi'} className="text-blue-500">Why DHI-AI</NavLink>
+                <NavLink to={'/customers'} className="text-blue-500">Our Customers</NavLink>
                 <NavLink to={'/team'} className="text-blue-500">Our Team</NavLink>
                 <NavLink to={'/contact'} className="text-blue-500">Contact Us</NavLink>
                 

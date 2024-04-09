@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto 5%;
+    margin: auto 2%;
     /* background-color: black; */
     justify-content: center;
 }
@@ -67,9 +67,9 @@
     z-index: 1;
     opacity: 1;
     position: absolute;
-    width: 150px;
+    width: 150px !important;
     margin: 80px 25px;
-    height: 150px;
+    height: 150px !important;
     border: 2px solid white;
     border-radius: 50%;
     /* justify-content: center; */
@@ -83,6 +83,8 @@
 }
 .showImg:hover .shwimg{
     opacity: 0;
+    width:150px;
+    height:150px;
 }
 
 @keyframes opacityInc {

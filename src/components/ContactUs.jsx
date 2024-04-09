@@ -53,12 +53,12 @@ const ContactUs=()=>{
             
 
             </div>
-            {/* <button className="px-4 py-2 border-gray-900 border-2 ml-[52vw] mr-[5vw]" 
+            <button className="px-4 py-2 border-gray-900 border-2 ml-[52vw] mr-[5vw]" 
             onClick={()=>setshowModal(true)}>
                     Book a Demo
 
-            </button> */}
-            {/* {showModal && 
+            </button>
+            {showModal && 
                 <div className=" z-10 inset-0 fixed bg-black bg-opacity-40 backdrop-blur-lg overflow-scroll md:overflow-hidden">
                     <div className="md:w-[70vw] w-[90vw] flex flex-col md:flex-row  my-auto mx-auto top-16 relative">
                         <div className="w-[90vw] md:w-[35vw] bg-indigo-700 text-white h-[450px] text-center px-4 py-8">
@@ -99,7 +99,7 @@ const ContactUs=()=>{
 
                     </div>
                 </div>
-            } */}
+            }
             
             <div className="bg-purple-700 text-white flex flex-col md:flex-row justify-around gap-y-10 py-10 mt-5"> 
             <div className="flex flex-col md:flex-row md:w-[400px] w-[90vw] mx-auto gap-4 justify-center">

@@ -144,8 +144,8 @@ const WhyDhi=()=>{
                     // style={{ backgroundImage: `` }}
                     className='w-full h-full rounded-2xl bg-center bg-cover duration-500 bg-indigo-700 py-4 px-2'
                 >
-                    <img src={slides[currentIndex].url} className="mx-auto h-[200px] w-[200px]"/>
-                    <div className="mt-2 text-2xl text-white text-center px-4">
+                    <img src={slides[currentIndex].url} className="mx-auto h-[230px] w-[230px]"/>
+                    <div className="mt-1 text-2xl text-white text-center px-4">
                         {slides[currentIndex].heading}
 
                     </div>
@@ -167,7 +167,7 @@ const WhyDhi=()=>{
                     <div
                         key={slideIndex}
                         onClick={() => goToSlide(slideIndex)}
-                        className='text-2xl cursor-pointer'
+                        className='text-2xl cursor-pointer '
                     >
                         <RxDotFilled />
                     </div>
