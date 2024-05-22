@@ -26,6 +26,7 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <ScrollToTop/>
+        
         <Routes>
           <Route path="/" element={<Home/>}/>
           {/* <Route path="/about" element={<About/>}/> */}
@@ -41,6 +42,7 @@ function App() {
 
         </Routes >
         <Footer/>
+        
 
       </BrowserRouter>
 

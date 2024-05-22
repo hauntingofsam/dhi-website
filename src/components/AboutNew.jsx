@@ -12,8 +12,7 @@ const AboutNew=()=>{
 
                     </p>
                     <p className="mt-20">
-                    DHI.AI is a boutique Strategy Consulting, AI/LLM, IoT, and Digital Marketing company headquartered in New Delhi. It has sales offices in Mumbai, Bangalore, Pune and Kolkata, and development centers in Kolkata and Pune. 
-
+                    DHI.AI is a boutique Strategy Consulting, Systems Integration, and Data Analytics company headquartered in New Delhi. It has offices in Mumbai, Delhi, Bangalore, Pune and Kolkata.
                     </p>
 
                 </div>
@@ -31,7 +30,7 @@ const AboutNew=()=>{
 
                         </p>
                         <p className="mt-5">
-                        DHI.AI has been set-up by industry veterans with decades of IT & Consulting experience in solving unique business problems for Fortune 500 clients globally
+                        DHI.AI has been set-up by senior executives from global information technology and consulting firms, with significant experience of working with Fortune 500 clients globally.
 
 
                         </p>
@@ -81,13 +80,13 @@ const AboutNew=()=>{
 
                         </p>
                         <p className="mt-5">
-                        DHI.AI is a preferred partner for IBM's Sustainability solutions and has built a dedicated competency with a team of strategy consultants, data scientists, and software developers to deliver weather, ESG and enterprise asset management solutions. 
+                        DHI.AI aspires to be one of the most admired and innovative global companies in the sustainability and industry 4.0 solutions space.
 
 
                         </p>
-                        <Link to="#" className="mt-8 flex flex-row gap-2 my-auto hover:text-blue-700 hover:gap-4 transition-all ease-out duration-700  text-[16px]">
+                        <Link to="/solutions" className="mt-8 flex flex-row gap-2 my-auto hover:text-blue-700 hover:gap-4 transition-all ease-out duration-700  text-[16px]">
                             <div>
-                            Explore our ESG solutions
+                            Explore our solutions
 
                             </div>
                             <div className=" text-blue-700 my-auto " size={30}>
@@ -129,8 +128,8 @@ const AboutNew=()=>{
 
             </div>
             <div className="what flex flex-col md:flex-row justify-between gap-6 mb-10">
-            <div className="md:w-[500px] w-[90vw] -md:h-[90vw] mr-[5vw]">
-                    <img src={logo} className="md:w-[500px] w-[350px] md:h-[500px] h-[350px]"/>
+                <div className="md:w-[500px] w-[90vw] -md:h-[90vw] mr-[5vw] py-14">
+                    <img src={logo} className="md:w-[500px] w-[350px] md:h-[500px] h-[350px] "/>
 
                 </div>
                 <div className="md:w-[500px] w-[90vw]  ml-[5vw] mr-[5vw]">
@@ -139,7 +138,10 @@ const AboutNew=()=>{
 
                     </p>
                     <p className="mt-20">
-                     DHI.AI team helps to conceptualize, design, create, deploy and manage innovative technology solutions powered by internet of things, location-based technologies, machine learning and artificial intelligence for clients across several industries. This competency helps enterprises to automate data collection from machines, IT systems and build data models to capture data from diverse source systems.
+                    DHI.AI helps to conceptualize, design, create, deploy and manage innovative technology solutions powered by internet-of-things, location-based technologies, artificial intelligence and machine learning for clients across several industries. This allows enterprises to automate data capture from diverse IT-OT systems and to build intelligent data models to monitor and predict business specific insights. 
+                     <br /><br />
+                    Additionally, our senior consultants are deeply knowledgeable about Sustainability, ESG, Sales & Distribution, Marketing, and Supply Chain domains across diverse enterprise systems such as IBM Maximo, IBM Envizi, IBM Weather, SAP, Oracle and Salesforce and help clients in their digital transformation journeys.
+
                     </p>
                     <Link to="/offerings"  className="mt-8 flex flex-row gap-2 my-auto hover:text-blue-700 hover:gap-3 transition-all ease-out duration-700  text-[16px] ">
                             <div>

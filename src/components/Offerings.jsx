@@ -10,6 +10,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 const offerings=[
     {
         heading:"Oracle Support & Services ",
+        subheading:"We implement, audit and support the following enterprise applications:",
         services:[
             "Audit Services",
             "Implementation",
@@ -43,6 +44,43 @@ const offerings=[
 
         ]
     },
+    {
+        heading:"IBM Maximo",
+        services:[
+            "Audit Services",
+            "Implementation",
+            "System Support",
+            "Enhancements",
+            "Add-on modules Development",
+
+        ]
+    },
+    
+    {
+        heading:"IBM Envizio",
+        services:[
+            "Audit Services",
+            "Implementation",
+            "System Support",
+            "Enhancements",
+            "Add-on modules Development",
+
+        ]
+    },
+    {
+        heading:"IBM TWC (Weather)",
+        services:[
+            "Audit Services",
+            "Implementation",
+            "System Support",
+            "Enhancements",
+            "Add-on modules Development",
+
+        ]
+    },
+
+
+    
     
 ]
 const emergingofferings=[
@@ -58,21 +96,20 @@ const emergingofferings=[
     {
       heading:"Emerging Technologies",
       services:[
-        "IOT",
-        "Blockchain",
-        "AR/VR",
         "Cognitive technologies",
         "Drones",
+        "IIOT",
+        "Blockchain",
+        "AR/VR",
       ],
     },
     {
         heading:"Smart Factory",
         services:[
-            "Strategy and Roadmap",
-            "IIOT Integration",
-            "Predictive Maintenance",
+            "Strategy & Roadmap",
             "Digital Twin",
-            "Edge Computing"
+            "IIOT – Cloud & Edge Computing",
+            "Predictive Maintenance",
         ],
     }
 ]
@@ -81,41 +118,37 @@ const digitalofferings=[
         heading:"Weather Insights",
         services:[
             "Monitoring disruptive weather conditions",
-            "Sending alerts",
-            "Predicting potential impacts",
-            "Insights",
-            "Measure & Report"
+            "Predicting potential impacts and providing client specific business insights",
+            "Building AI powered prediction models for enhanced sales forecasting, supply chain disruptions, renewable energy forecasting by leveraging weather data",
         ]
     },
     {
         heading:"Sustainability & ESG",
         services:[
-            "ESG Consultancy",
-            "ESG Roadmap",
-            "IBM Envizi Implementation",
-            "ESG Marketing",
-            "IBM ESG Support",
+            "ESG Consulting - Goal setting, materiality and gap assessment, peer benchmarking, capability workshops and training ",
+            "ESG Reporting - BRSR and other global frameworks such as GRI, CDP, TCFD, etc.",
+            "ESG Platform Implementation - IBM Envizi ",
+            "ESG Branding – ESG and Integrated Report design and communication",
+            
         ]
     },
     {
         heading:"Enterprise Asset Management",
         services:[
-            "ESG Consultancy",
-            "ESG Roadmap",
-            "IBM Envizi Implementation",
-            "ESG Marketing",
-            "IBM ESG Support",
+            "Asset lifecycle management from induction to retiral",
+            "Asset maintenance lifecycle – preventive, predictive, prescriptive",
+            "Production optimization ",
+            "EAM Platform Implementation - IBM Maximo EAM Suite",
 
         ],
     },
     {
-        heading:"IOT",
+        heading:"Industrial IOT",
         services:[
-            "ESG Consultancy",
-            "ESG Roadmap",
-            "IBM Envizi Implementation",
-            "ESG Marketing",
-            "IBM ESG Support",
+            "Drawing machines insights to predict failures and balance useful life",
+            "Location based tracking of assets and movement alerts",
+            "Vision analytics to identify defects and damages ",
+            "Smart tags for worker safety and availability",
         ],
     },
     
@@ -140,13 +173,13 @@ const Offerings=()=>{
 
             </div>
             <p className="text-lg text-white ml-[5vw] mb-8">
-            We provide expert advisory services, application development, managed services and analytics as a service.
+            We help our clients to identify business requirements, write RFPs and do bid evaluation, develop business case, and manage client projects by setting up dedicated PMOs.
             </p>
             < div className="flex flex-col md:flex-row   mt-20 mb-40 gap-6">
             
                     
                 
-                <div className="flip-card h-[300px] md:w-[40vw] w-[90%] bg-transparent mx-[5%] ">
+                <div className="flip-card h-[300px] md:w-[40vw] w-[90%] bg-transparent mx-[5%] my-auto">
                 <div className="flipcard-inner ">
                     <div className="flipcard-front bg-indigo-900 rounded-lg">
                             <img src={img1} className="rounded-full mx-auto mt-4"/>
@@ -171,7 +204,7 @@ const Offerings=()=>{
                 </div>
                     
                 <div className=" flex flex-col  ">
-                <div className="flex flex-row  md:w-[40vw] w-[80%] gap-2 mx-[10%] md:mx-0">
+                <div className="flex flex-row flex-wrap md:w-[40vw] w-[80%] gap-2 mx-[10%] md:mx-0">
                     {/* <div   className=" md:w-[330px] w-[90vw] bg-blue-950 sm:mr-20 ml-auto rounded-lg ">
                         <p className="text-xl text-white text-center  py-6">
                             Oracle
@@ -214,6 +247,10 @@ const Offerings=()=>{
 
                 </div>
                 <div className="flex flex-col  md:w-[40vw] w-[80%]  mx-[10%] md:mx-0">
+                 <div className="text-white ">
+                    {offerings[currentOfferingIndex].text}
+
+                    </div>   
                 {offerings[currentOfferingIndex].services.map((el)=>(
                         <div
                         key={el}
@@ -247,7 +284,7 @@ const Offerings=()=>{
             
                     
                 
-                <div className="flip-card h-[300px] md:w-[40vw] w-[90%] bg-transparent mx-[5%]">
+                <div className="flip-card h-[300px] md:w-[40vw] w-[90%] bg-transparent mx-[5%] my-auto">
                 <div className="flipcard-inner ">
                     <div className="flipcard-front bg-indigo-900 rounded-lg">
                             <img src={img2} className="rounded-full mx-auto mt-4"/>
@@ -259,7 +296,7 @@ const Offerings=()=>{
                     <div className="flipcard-back rounded-lg py-auto bg-indigo-700 pt-[20%]">
                         <div className="text-lg text-white text-center">
                         {/* <p className="my-8 h-[100px]"> */}
-                        We design & build customized digital applications and also leverage our ready-to-use “accelerators” across IIoT, Vision Analytics, AI/ML, AR/VR, and Track & Trace domains
+                        We design & build customized digital applications using IoT, Vision Analytics, Location, AR/VR, and leverage AI/ML and LLMs to derive industry and customer specific business insights. 
                         {/* </p>  */}
 
                         </div>
@@ -347,7 +384,7 @@ const Offerings=()=>{
             
                     
                 
-                <div className="flip-card h-[300px] md:w-[40vw] w-[90%] bg-transparent mx-[5%]">
+                <div className="flip-card h-[300px] md:w-[40vw] w-[90%] bg-transparent mx-[5%] my-auto">
                 <div className="flipcard-inner ">
                     <div className="flipcard-front bg-indigo-900 rounded-lg">
                             <img src={img3} className="rounded-full mx-auto mt-4"/>
@@ -359,7 +396,7 @@ const Offerings=()=>{
                     <div className="flipcard-back rounded-lg py-auto bg-indigo-700 pt-[20%]">
                         <div className="text-lg text-white text-center">
                         {/* <p className="my-8 h-[100px]"> */}
-                        We design & build customized digital applications and also leverage our ready-to-use “accelerators” across IIoT, Vision Analytics, AI/ML, AR/VR, and Track & Trace domains
+                        We design & build customized digital applications and also leverage our ready-to-use “accelerators” across IIoT, Vision Analytics, AI/ML, AR/VR, and Track & Trace domains.
                         {/* </p>  */}
 
                         </div>

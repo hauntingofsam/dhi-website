@@ -1,5 +1,4 @@
 import React from 'react';
-import dummyImg from '../assets/capab-1.jpg'
 import p1 from "../assets/Picture1.png"
 import p2 from "../assets/Picture2.png"
 import p3 from "../assets/Picture5.png"

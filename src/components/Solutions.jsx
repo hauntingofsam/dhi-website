@@ -53,30 +53,21 @@ const Solutions=()=>{
                 modules={[EffectCoverflow, Pagination, Navigation]}
                 className="swiper_container"
             >
-                <SwiperSlide className="bg-indigo-700 w-[300px] text-center  ">
+                <SwiperSlide className="bg-indigo-700 w-[300px] text-center px-2 ">
                     <img src={img1} className="mx-auto my-5"/>
-                    <p className="text-white text-2xl mt-4">EIP</p>
-                    <p className="text-white text-lg mt-2">
-                        Business Platform
+                    
+                    <p className="text-white text-sm mt-2">
+                    DHI DTWIN-360 is an Enterprise Business Platform that brings People, Processes, Technologies and Data together seamlessly to enable cross functional interactions and big data analytics. It leverages proven technologies such as Watsonx and
 
                     </p>
-                    <p className="text-white mt-5">
-                        <ul className="space-y-2">
-                            <li>People</li>
-                            <li>Processes</li>
-                            <li>Data</li>
-                        </ul>
-
-
-                    </p>
+                    
 
                 </SwiperSlide>
                 <SwiperSlide className="bg-indigo-700 w-[300px] text-center">
                     <img src={img2} className="mx-auto my-5"/>
-                    <p className="text-white text-2xl mt-4">ESG for Enterprise</p>
+                    <p className="text-white text-2xl mt-4">Sustainability & ESG </p>
                     <p className="text-white mt-5 px-4">
-                    ESG for Enterprise powered by IBM Maximo Monitor and Envizi and Weather Insights
-
+                    DHI.AI Sustainability & ESG Consulting, IBM Envizi ESG Monitoring & Reporting Platform
 
                     </p>
                     
@@ -89,7 +80,7 @@ const Solutions=()=>{
 
                     </p>
                     <p className="text-white mt-5 px-4">
-                    Worker Safety Solution powered by IBM Worker Safety, Maximo Monitor and Flight Planner
+                    EHS - IBM Maximo, Worker Safety – Vision Analytics & Smart Cards, AI powered Safety Insights
 
 
 
@@ -104,7 +95,7 @@ const Solutions=()=>{
 
                     </p>
                     <p className="text-white mt-5 px-4">
-                    Smarter Products for the Enterprise powered by IBM Maximo Monitor
+                    Smarter Products for the Enterprise powered by IBM Maximo 
 
 
 
@@ -122,7 +113,7 @@ const Solutions=()=>{
 
                     </p>
                     <p className="text-white mt-5 px-4">
-                    Smart Factory powered by IBM Maximo Monitor, Telit DeviceWise, Maximo Predict
+                    Smart Factory powered by IBM Maximo Monitor and Predict, Telit DeviceWise
 
 
 
@@ -139,7 +130,7 @@ const Solutions=()=>{
 
                     </p>
                     <p className="text-white mt-5 px-4">
-                    Digital Twin for Enterprise powered by IBM Maximo Monitor and Predict, Weather Insights
+                    Digital Twin for Enterprise powered by IBM Maximo 
 
 
 
@@ -158,7 +149,7 @@ const Solutions=()=>{
 
                     </p>
                     <p className="text-white mt-5 px-4">
-                    Weather Insights for Business with Integration to IOT Platform
+                    Weather Insights for Business with integration to IOT Platform
 
 
                     </p>
@@ -172,7 +163,7 @@ const Solutions=()=>{
 
                     </p>
                     <p className="text-white mt-5 px-4">
-                    Drone Flight Planning and Management powered by IBM Weather with GIS Integration with SAP/Maximo Connectors
+                    Drone Flight Planning & Management powered by IBM Weather with GIS Integration with SAP/Maximo Connectors
 
 
                     </p>
