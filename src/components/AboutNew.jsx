@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/About-1st.png"
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Values from "./Values";
 const AboutNew=()=>{
     return(
         <div className="bg-white">
@@ -160,6 +161,7 @@ const AboutNew=()=>{
                 
 
             </div>
+            <Values/>
 
         </div>
     )
